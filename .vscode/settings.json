@@ -1,0 +1,7 @@
+{
+    "C_Cpp.errorSquiggles": "disabled",
+    "files.associations": {
+        "dunstrc": "toml",
+        "8051.h": "c"
+    }
+}
