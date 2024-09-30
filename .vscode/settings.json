@@ -1,7 +1,22 @@
 {
     "C_Cpp.errorSquiggles": "disabled",
     "files.associations": {
+        "*.embeddedhtml": "html",
         "dunstrc": "toml",
-        "8051.h": "c"
-    }
+        "8051.h": "c",
+        "stdio.h": "c",
+        "corecrt_stdio_config.h": "c",
+        "string.h": "c",
+        "uart.h": "c",
+        "utils.h": "c",
+        "delay.h": "c",
+        "sdcc-lib.h": "c",
+        "features.h": "c",
+        "lcd1602.h": "c",
+        "random": "c",
+        "limits": "c",
+        "algorithm": "c"
+    },
+    "python.analysis.typeCheckingMode": "basic",
+    "python.analysis.autoImportCompletions": true
 }

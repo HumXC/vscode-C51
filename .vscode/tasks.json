@@ -6,11 +6,29 @@
         {
             "label": "compile",
             "type": "shell",
-            "command": "make",
-            "args": ["target=${fileBasenameNoExtension}"],
+            "command": "python",
+            "args": ["build.py", "${fileBasename}"],
             "group": {
-                "kind": "build",
-                "isDefault": true
+                "kind": "build"
+            }
+        },
+        {
+            "label": "flash",
+            "dependsOn": ["compile"],
+            "type": "shell",
+            "command": "python",
+            "args": ["stcflash.py", "output/${fileBasenameNoExtension}.hex"],
+            "group": {
+                "kind": "build"
+            }
+        },
+        {
+            "label": "clean",
+            "type": "shell",
+            "command": "python",
+            "args": ["clean.py"],
+            "group": {
+                "kind": "build"
             }
         }
     ]

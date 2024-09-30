@@ -4,9 +4,9 @@
             "name": "Win32",
             "includePath": [
                 "${workspaceFolder}/**",
+                "${workspaceFolder}/lib/**",
                 "C:\\Users\\Asika\\scoop\\apps\\sdcc\\current\\include\\**"
-            ],
-            "defines": ["_DEBUG", "UNICODE", "_UNICODE"]
+            ]
         }
     ],
     "version": 4
